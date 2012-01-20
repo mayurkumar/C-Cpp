@@ -1,0 +1,24 @@
+                 
+                              Functionality Of Stack.(Using C Language(TurboC))
+
+
+=> To Implement the PUSH/POP functionality of stack here we uses the concept of Linked List . 
+
+=> In this program here we have 2 functions  A)push & B)pop .
+
+A)void push(int data): This function first creates the memory for node then put the ‘data’ into ‘info’                         part of node and assign ‘NULL’to the link part of node.If this node is linkded                        with the Linked List.
+
+B)int pop() : This function returns the ‘info’ part of last node & removes the last node form linked               list.
+
+Output: On console we have menu with 3 options
+        1)push
+        2)pop
+        3)exit.
+        Then asked for our choice.
+
+=> If we press choice 1) then it will ask for number and that number will be pushed into the stack   (Linked with the last node) as per the given condition.If condition is not satisfied then it will    print appropriate message.
+
+=> If we press choice 2) then it will print the ‘poped’ number('Info' part of last node) and ‘pattern’    (sequence of poped number)onto the console.
+   
+=> If we press choice 3) then programe will be terminated.  
+     
