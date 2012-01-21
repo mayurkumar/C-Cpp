@@ -1,43 +1,45 @@
                          
                           Game of Elimination :  (Using C Language(TurboC))
 
-=>To implement the game of elimination here we use the concept of  ‘CIRCULAR LINKED LIST’.
+=>To implement the game of elimination here we use the concept of  ï¿½CIRCULAR LINKED LISTï¿½.
  
 =>On console we have three choices as follow.
 
 1)ENTER KIDS : If we press choice 1  then it will ask for How many kids are there (M)? Then it will ask                for kids name and create separate node for each kid and link the node into the circular                 list.
 
-2)ELIMINATE : If we press choice 3 then it will ask for  select any random  number (N) where(N<M).Then                program traverse the circular list start from the first node and delete the node from                   circular list when PASSES becomes equal to ‘N ‘.It continue this process untill                         there is onely one node remain left and it last kid becomes the winner.
+2)ELIMINATE : If we press choice 3 then it will ask for  select any random  number (N) where(N<M).Then                program traverse the circular list start from the first node and delete the node from                   circular list when PASSES becomes equal to ï¿½N ï¿½.It continue this process untill                         there is onely one node remain left and it last kid becomes the winner.
 
 3)EXIT: If we press choice then programe will be terminated. 
 
 Algorith  for Elimination is as fillow:
 
-=> Total number of kids‘M‘and random number‘N’were (N<M) is given.
-=> ‘FIRST’ is a first node of circular list from which we starts the traversing.‘TEMP’  is a temporary     node  and  ‘PREV’ node precedes ‘TEMP’ node  it is used to delete the node at appropriate location      from the  circular list.
+=> Total number of kidsï¿½Mï¿½and random numberï¿½Nï¿½were (N<M) is given.
+=> ï¿½FIRSTï¿½ is a first node of circular list from which we starts the traversing.ï¿½TEMPï¿½  is a temporary     node  and  ï¿½PREVï¿½ node precedes ï¿½TEMPï¿½ node  it is used to delete the node at appropriate location      from the  circular list.
 
 PROCEDURE(N) :  
 
-    WHILE  FIRST[LINK]<>FIRST
+ STEP 1) Repeat WHILE  FIRST[LINK]<>FIRST
   
-         IF N=1 THEN
-                TEMP=FIRST[LINK]
-                WHILE  TEMP<>FIRST
-                     PREV=TEMP
-                     TEMP=TEMP[LINK]
-                     END WHILE
-                     PREV[LINK]=TEMP[LINK]
-                     FIRST=PREV[LINK]
-         ELSE: 
-                TEMP=FIRST
-                i=1
-                WHILE  i<N
-                     PREV=TEMP
-                     TEMP=TEMP[LINK]
-                     END WHILE
-                     PREV[LINK]=TEMP[LINK]
-                     FIRST=PREV[LINK]
-         END IF
+ STEP 2)          IF N=1 THEN
+                       TEMP=FIRST[LINK]
+                       WHILE  TEMP<>FIRST
+                       PREV=TEMP
+                       TEMP=TEMP[LINK]
+                       END WHILE
+                       PREV[LINK]=TEMP[LINK]
+                       FIRST=PREV[LINK]
+                  ELSE: 
+                      TEMP=FIRST
+                      i=1
+                      WHILE  i<N
+                      PREV=TEMP
+                      TEMP=TEMP[LINK]
+                      END WHILE
+                      PREV[LINK]=TEMP[LINK]
+                      FIRST=PREV[LINK]
+                  END IF 
 
-    END WHILE 
+         END WHILE 
+
+ STEP 3)END
 
