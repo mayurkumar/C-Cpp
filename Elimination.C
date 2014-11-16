@@ -14,7 +14,7 @@ struct node *first=NULL;
 struct node *new1;
 struct node *temp;
 
-void add(char na[]) //This function will add node into the circular link list
+void add(char na[]) //This function will add node into the circular link list ..
 {
   new1=(struct node*)malloc(sizeof(struct node));//create memory for new node
   strcpy(new1->name,na);
